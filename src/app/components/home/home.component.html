@@ -6,14 +6,33 @@
     class="img-fluid"
     style="height: 40vh;width:100%;box-shadow: 0 4px 8px rgb(0,0,0,0.2);z-index: 0; position: relative;"
     alt="">
-    <div class="input-group" style="position: absolute;top: 25%;left: 25%; width: 50%; z-index: 5;">
-      <input  type="text" id="form1" class="form-control" placeholder="Grab your domain!">
-      <div class="input-group-btn">
-        <button class="btn btn-primary waves-light" style="margin: 0;" type="button" mdbWavesEffect>Search</button>
-    </div>
-    </div>
+    
+      <form [formGroup]="searchForm" (ngSubmit)="onSearch()" >
+        <div class="input-group" style="position: absolute;top: 25%;left: 25%; width: 50%; z-index: 5;">
+        <input  type="text" id="form1" formControlName="searchBox" class="form-control" placeholder="Grab your domain!">
+        <div class="input-group-btn">
+          <button class="btn btn-primary waves-light" style="margin: 0;" type="submit" mdbWavesEffect>Search</button>
+        </div>
+        </div>
+      </form>
+    
   </div>
   <!-- /Search Domain -->
+<!-- SearchResults -->
+  <div class="container" style="margin-top: 70px;padding: 50px 30px;">
+    <h2>Results:</h2>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>www.abc.com</h3>
+      </div>
+      <div class="col-sm-3 offset-sm-5">
+        <button type="button" style="margin: 0;" class="btn btn-success btn-block waves-light" mdbWavesEffect>Buy &nbsp; &#8377; 50</button>
+      </div>
+    </div>
+    <hr>
+  </div>
+<!-- /SearchResults -->
 
   <!-- Why choose us? -->
 <div class="container" style="box-shadow: 0px 3px 8px rgba(0,0,0,0.2);margin-top: 70px;padding: 50px 30px;background: #fff">

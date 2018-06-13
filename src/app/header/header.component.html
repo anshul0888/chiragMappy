@@ -21,17 +21,17 @@
 
       <!-- Dropdown -->
       <li class="nav-item dropdown" dropdown>
-        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" [routerLink]="'/product'" mdbWavesEffect>
           Products
           <span class="caret"></span>
         </a>
         <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Website</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Domain</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">SSLC</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Business Email</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Digital Marketing</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">360 Virtual Tour</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="'/product/website'">Website</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="'/product/domain'">Domain</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="'/product/sslc'">SSLC</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="'/product/business-email'">Business Email</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="'/product/digital-marketing'">Digital Marketing</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="'/product/virtual-tour'">360 Virtual Tour</a>
         </div>
       </li>
       <!-- /Dropdown -->

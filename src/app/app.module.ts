@@ -14,6 +14,13 @@ import { BenefitsComponent } from './components/benefits/benefits.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { AboutComponent } from './components/about/about.component';
 import { StoreService } from './store.service';
+import { WebsiteComponent } from './components/products/website/website.component';
+import { DomainComponent } from './components/products/domain/domain.component';
+import { SslcComponent } from './components/products/sslc/sslc.component';
+import { BusinessEmailComponent } from './components/products/business-email/business-email.component';
+import { DigitalMarketingComponent } from './components/products/digital-marketing/digital-marketing.component';
+import { VitrualTourComponent } from './components/products/vitrual-tour/vitrual-tour.component';
+import { ProductComponent } from './components/products/product/product.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +30,20 @@ import { StoreService } from './store.service';
     HomeComponent,
     BenefitsComponent,
     FaqComponent,
-    AboutComponent
+    AboutComponent,
+    WebsiteComponent,
+    DomainComponent,
+    SslcComponent,
+    BusinessEmailComponent,
+    DigitalMarketingComponent,
+    VitrualTourComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     StoreService
