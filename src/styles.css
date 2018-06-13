@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+main-body{
+    height: 93vh;
+    overflow-y: auto;
+}
+body {
+    background: #f8f8f8;
+}
