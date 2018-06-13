@@ -21,10 +21,10 @@
 
       <!-- Dropdown -->
       <li class="nav-item dropdown" dropdown>
-        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" [routerLink]="'/product'" mdbWavesEffect>
+        <button style="background: transparent; border: none;" dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" [routerLink]="'/product'" mdbWavesEffect>
           Products
           <span class="caret"></span>
-        </a>
+        </button>
         <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
           <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="'/product/website'">Website</a>
           <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="'/product/domain'">Domain</a>
