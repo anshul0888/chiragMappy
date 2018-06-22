@@ -3,7 +3,7 @@
 
   <!-- Navbar brand -->
   <logo>
-    <a class="navbar-brand" [routerLink]="'/'">Mappy</a>
+    <a class="navbar-brand" [routerLink]="'/'">DigitalSamay</a>
   </logo>
 
   <!-- Collapsible content -->
@@ -18,29 +18,17 @@
       <li class="nav-item" routerLinkActive="active">
         <a class="nav-link waves-light" [routerLink]="'/benefits'" mdbWavesEffect>Benefits</a>
       </li>
-
-      <!-- Dropdown -->
-      <li class="nav-item dropdown" dropdown>
-        <button style="background: transparent; border: none;" dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" [routerLink]="'/product'" mdbWavesEffect>
-          Products
-          <span class="caret"></span>
-        </button>
-        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="'/product/website'">Website</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="'/product/domain'">Domain</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="'/product/sslc'">SSLC</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="'/product/business-email'">Business Email</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="'/product/digital-marketing'">Digital Marketing</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="'/product/virtual-tour'">360 Virtual Tour</a>
-        </div>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light" [routerLink]="'/product/website'" mdbWavesEffect>Products</a>
       </li>
-      <!-- /Dropdown -->
-
       <li class="nav-item" routerLinkActive="active">
         <a class="nav-link waves-light" [routerLink]="'/faq'" mdbWavesEffect>FAQ</a>
       </li>
       <li class="nav-item" routerLinkActive="active">
         <a class="nav-link waves-light" [routerLink]="'/about'" mdbWavesEffect>About</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light" [routerLink]="'/contact-us'" mdbWavesEffect>Contact Us</a>
       </li>
 
     </ul>

@@ -1,0 +1,45 @@
+<div class="row" style="margin-top: 30px;">
+  <div class="col-sm-4 offset-sm-8" style="padding: 20px;">
+    <div style="padding: 15px; background: #fff; box-shadow: 0 0 8px rgb(0,0,0,0.2);">
+      <!-- contact form -->
+<form [formGroup]="productForm" (ngSubmit)="onSubmit();">
+        <div class="md-form">
+          <input type="text" id="name" formControlName="name" class="form-control" mdbActive>
+          <label for="name">Name</label>
+        </div>
+
+        <div class="md-form">
+          <input type="email" id="email" formControlName="email" class="form-control" mdbActive>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="md-form">
+          <input type="text" id="mobile" formControlName="mobile" class="form-control" mdbActive>
+          <label for="mobile">Mobile</label>
+        </div>
+
+        <div class="md-form">
+          <input type="text" id="subject" formControlName="subject" class="form-control" mdbActive>
+          <label for="subject">Display, Mobile, Video, Shopping, Search Ads</label>
+        </div>
+
+        <div class="md-form">
+          <input type="text" id="category" formControlName="category" class="form-control" mdbActive>
+          <label for="category">Your Business Category</label>
+        </div>
+
+        <div class="md-form">
+          <textarea type="text" id="message" formControlName="message" class="md-textarea" style="height: 100px; width: 100%;" mdbActive></textarea>
+          <label for="message">Message</label>
+        </div>
+
+        <div class="text-center">
+          <button class="btn btn-unique waves-light" mdbWavesEffect>Send
+            <i class="fa fa-paper-plane-o ml-1"></i>
+          </button>
+        </div>
+      </form>
+      <!-- contact form -->
+    </div>
+  </div>
+</div>

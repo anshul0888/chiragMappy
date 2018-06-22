@@ -8,12 +8,20 @@
 <div class="container" style="margin-top: 50px;margin-bottom: 50px; padding: 50px;background: #fff; box-shadow: 0 0 8px rgb(0,0,0,0.2);border-radius: 8px;">
     <h1>Benefits</h1>
     <hr>
-    <br>
-    <h2>What is Lorem Ipsum?</h2><br>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <br>
-    <h2>What is Lorem Ipsum?</h2>
-    <br>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+    <div class="row" *ngFor="let data of data.benefits" style="margin-top: 100px;width: 100%;" >
+      <div class="row" style="width: 100%;">
+        <div class="col-sm-4">
+          <img src="{{data.image}}" class="img-thumbnail" style="min-width: 150px;max-width: 150px;" alt="">
+        </div>
+        <div class="col-sm-8">
+          <h2> {{data.heading}} </h2>
+          <hr>
+          <p style="font-size: 18px;line-height: 25px;margin-top: 30px;"> {{data.description}} </p>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </div>

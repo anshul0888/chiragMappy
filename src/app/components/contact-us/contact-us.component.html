@@ -1,0 +1,50 @@
+<div style="min-height: 93vh;overflow-y: auto;">
+  <div>
+    <img src="http://www.tektile.com.ph/wp-content/themes/tektile/images/contact-us-background.jpg"
+    class="img-fluid"
+    style="height: 40vh;width:100%;box-shadow: 0 4px 8px rgb(0,0,0,0.2)"
+    alt="">
+  </div>
+
+  <div class="container">
+    <h2 style="margin-top: 70px;">Contact Us</h2>
+    <hr>
+
+    <div class="row" style="margin-top: 70px; margin-bottom: 70px;">
+      <div class="col-sm-6 offset-sm-3" style="padding: 30px; background: #fff; box-shadow: 0 0 8px rgb(0,0,0,0.2);">
+        <!-- contact form -->
+        <form [formGroup]="contactUsForm">
+          <div class="md-form">
+            <input type="text" id="contactFormName" formControlName="contactFormName" class="form-control" mdbActive>
+            <label for="contactFormName">Your name</label>
+          </div>
+
+          <div class="md-form">
+            <input type="email" id="contactFormEmail" formControlName="contactFormEmail" class="form-control" mdbActive>
+            <label for="contactFormEmail">Your email</label>
+          </div>
+
+          <div class="md-form">
+            <input type="text" id="contactFormSubject" formControlName="contactFormSubject" class="form-control" mdbActive>
+            <label for="contactFormSubject">Subject</label>
+          </div>
+
+          <div class="md-form">
+            <textarea type="text" id="contactFormMessage" formControlName="contactFormMessage" class="md-textarea" style="height: 100px; width: 100%;"
+              mdbActive></textarea>
+            <label for="contactFormMessage">Your message</label>
+          </div>
+
+          <div class="text-center">
+            <button class="btn btn-unique waves-light" mdbWavesEffect>Send
+              <i class="fa fa-paper-plane-o ml-1"></i>
+            </button>
+          </div>
+        </form>
+        <!-- contact form -->
+      </div>
+    </div>
+  </div>
+  
+
+</div>

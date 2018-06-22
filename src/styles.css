@@ -6,3 +6,6 @@ main-body{
 body {
     background: #f8f8f8;
 }
+p {
+    line-height: 33px;
+}

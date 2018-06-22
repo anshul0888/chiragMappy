@@ -7,15 +7,17 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./business-email.component.css']
 })
 export class BusinessEmailComponent implements OnInit {
-  businessEmailForm: FormGroup;
+  productForm: FormGroup;
   constructor() { }
 
   ngOnInit() {
-    this.businessEmailForm = new FormGroup({
-      contactFormName: new FormControl(),
-      contactFormEmail: new FormControl(),
-      contactFormSubject: new FormControl(),
-      contactFormMessage: new FormControl()
+    this.productForm = new FormGroup({
+      name: new FormControl(),
+      email: new FormControl(),
+      mobile: new FormControl(),
+      subject: new FormControl(),
+      category: new FormControl(),
+      message: new FormControl()
     });
   }
 

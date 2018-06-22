@@ -7,15 +7,17 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./domain.component.css']
 })
 export class DomainComponent implements OnInit {
-  domainForm: FormGroup;
+  productForm: FormGroup;
   constructor() { }
 
   ngOnInit() {
-    this.domainForm = new FormGroup({
-      contactFormName: new FormControl(),
-      contactFormEmail: new FormControl(),
-      contactFormSubject: new FormControl(),
-      contactFormMessage: new FormControl()
+    this.productForm = new FormGroup({
+      name: new FormControl(),
+      email: new FormControl(),
+      mobile: new FormControl(),
+      subject: new FormControl(),
+      category: new FormControl(),
+      message: new FormControl()
     });
   }
 

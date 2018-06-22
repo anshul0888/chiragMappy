@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StoreService } from '../../store.service';
 
 @Component({
   selector: 'app-benefits',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./benefits.component.css']
 })
 export class BenefitsComponent implements OnInit {
-
-  constructor() { }
+  data;
+  constructor(private storeService: StoreService) { }
 
   ngOnInit() {
+    this.data = this.storeService.store;
   }
 
 }

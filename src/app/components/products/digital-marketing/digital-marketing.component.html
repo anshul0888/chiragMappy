@@ -1,41 +1,51 @@
-<div class="container" style="margin-bottom: 50px;">
+<div class="container-fluid" style="margin-bottom: 50px;margin-top: 50px;">
   <h2>Digital Marketing</h2>
   <hr>
   <br>
 
-  <div class="row">
-    <div class="col-sm-6 offset-sm-3" style="padding: 30px; background: #fff; box-shadow: 0 0 8px rgb(0,0,0,0.2);">
-      <!-- contact form -->
-      <form [formGroup]="digitalMarketingForm">
-        <div class="md-form">
-          <input type="text" id="contactFormName" formControlName="contactFormName" class="form-control" mdbInputDirective>
-          <label for="contactFormName">Your name</label>
-        </div>
+<div class="row">
 
-        <div class="md-form">
-          <input type="email" id="contactFormEmail" formControlName="contactFormEmail" class="form-control" mdbInputDirective>
-          <label for="contactFormEmail">Your email</label>
-        </div>
+  <div class="col-sm-12">
+    <!--Navbar-->
+    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark teal lighten-2" [containerInside]="false">
 
-        <div class="md-form">
-          <input type="text" id="contactFormSubject" formControlName="contactFormSubject" class="form-control" mdbInputDirective>
-          <label for="contactFormSubject">Subject</label>
-        </div>
+      <!-- Collapsible content -->
+      <links>
 
-        <div class="md-form">
-          <textarea type="text" id="contactFormMessage" formControlName="contactFormMessage" class="md-textarea" style="height: 100px; width: 100%;"
-            mdbInputDirective></textarea>
-          <label for="contactFormMessage">Your message</label>
-        </div>
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item" routerLinkActive="active" >
+                  <a class="nav-link waves-light" [routerLink]="'/product/digital-marketing/seo-sem'" mdbWavesEffect>SEO/ SEM</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active" >
+                  <a class="nav-link waves-light" [routerLink]="'/product/digital-marketing/smo-smm'" mdbWavesEffect>SMO/ SMM</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active" >
+                  <a class="nav-link waves-light" [routerLink]="'/product/digital-marketing/email-marketing'" mdbWavesEffect>Email Marketing</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active" >
+                  <a class="nav-link waves-light" [routerLink]="'/product/digital-marketing/pc-marketing'" mdbWavesEffect>PC Marketing</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active" >
+                  <a class="nav-link waves-light" [routerLink]="'/product/digital-marketing/brand-management'" mdbWavesEffect>Brand Management</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active" >
+                  <a class="nav-link waves-light" [routerLink]="'/product/digital-marketing/repulsion-management'" mdbWavesEffect>Online Repulsion Management</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active" >
+                  <a class="nav-link waves-light" [routerLink]="'/product/digital-marketing/content-marketing'" mdbWavesEffect>Content Marketing</a>
+              </li>
 
-        <div class="text-center">
-          <button class="btn btn-unique waves-light" mdbWavesEffect>Send
-            <i class="fa fa-paper-plane-o ml-1"></i>
-          </button>
-        </div>
-      </form>
-      <!-- contact form -->
-    </div>
+          </ul>
+          <!-- Links -->
+          <!-- Search form -->
+          
+      </links>
+      <!-- Collapsible content -->
+
+    </mdb-navbar>
+    <!--/.Navbar-->
   </div>
-
+</div>
+<router-outlet></router-outlet>
 </div>

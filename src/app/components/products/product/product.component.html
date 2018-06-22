@@ -1,10 +1,67 @@
 <div style="min-height: 93vh;">
-  <div style="margin-bottom: 50px;">
+
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark grey lighten-4 sticky-top" [containerInside]="false">
+
+  <!-- Navbar brand -->
+  <logo class="brand">
+    <a class="navbar-brand"  style="color: #000;" href="#">All Products</a>
+  </logo>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light" style="color: #000;" [routerLink]="'/product/website'" mdbWavesEffect>Website</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light"  style="color: #000;" [routerLink]="'/product/domain'" mdbWavesEffect>Domain</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light"  style="color: #000;" [routerLink]="'/product/sslc'"mdbWavesEffect>SSLC</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light"  style="color: #000;" [routerLink]="'/product/business-email'"mdbWavesEffect>Business Emails</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light"  style="color: #000;" [routerLink]="'/product/digital-marketing'"mdbWavesEffect>Digital Marketing</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light"  style="color: #000;" [routerLink]="'/product/virtual-tour'" mdbWavesEffect>360 Virtual Tour</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light"  style="color: #000;" [routerLink]="'/product/graphic-designing'" mdbWavesEffect>Graphic Designing</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light"  style="color: #000;" [routerLink]="'/product/software-devlopment'" mdbWavesEffect>Software Devlopment &amp; Design</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light"  style="color: #000;" [routerLink]="'/product/bulk-sms'" mdbWavesEffect>Bulk SMS</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light"  style="color: #000;" [routerLink]="'/product/e-commerce'" mdbWavesEffect>E-Commerce</a>
+      </li>
+
+    </ul>
+    <!-- Links -->
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+
+
+  <!-- <div style="margin-bottom: 50px;">
   <img src="https://www.reminetwork.com/wp-content/uploads/rsz_fotolia_59710988_subscription_xxl.jpg"
     class="img-fluid"
     style="height: 40vh;width:100%;box-shadow: 0 4px 8px rgb(0,0,0,0.2)"
     alt="">
-  </div>
+  </div> -->
 
   <router-outlet></router-outlet>
 
